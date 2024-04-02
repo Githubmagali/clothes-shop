@@ -321,5 +321,49 @@ const items5 =[
         buttom:"Shop Now "
     },
 ]
+const items6=[
+    {
+        id:1,
+        name:"Brands 1",
+        img:"/banner/brand-1.png"
+    },
+    {
+        id:2,
+        name:"Brands 2",
+        img:"/banner/brand-2.png"
+    },
+    {
+        id:3,
+        name:"Brands 3",
+        img:"/banner/brand-3.png"
+    },
+    {
+        id:4,
+        name:"Brands 4",
+        img:"/banner/brand-4.png"
+    },
+    {
+        id:5,
+        name:"Brands 5",
+        img:"/banner/brand-5.png"
+    },
+    {
+        id:6,
+        name:"Brands 6",
+        img:"/banner/brand-6.png"
+    },
+    {
+        id:7,
+        name:"Brands 3",
+        img:"/banner/brand-3.png"
+    },
+]
+const cart=[
+    {
+        id:1,
+        name:"tshirt",
+        price:"9.99"
+    }
+]
 
-export { items1, items2, items3, items4, items5 };
+export { items1, items2, items3, items4, items5, items6 };
