@@ -3,7 +3,7 @@ export default function CartPage() {
     return (
         <>
 
-            <h1 className="flex text-center ">Cart</h1>
+            <h1 className="flex text-center p-20 text-xl ">Cart</h1>
             <div className="grid grid-cols-6 items-center justify-center ">
                 <div className="grid-col-1">
                     <img />

@@ -1,12 +1,12 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { items1 } from "@/app/assets/shop-1";
-import { items2 } from "@/app/assets/shop-1";
-import { items3 } from "@/app/assets/shop-1";
-import { items4 } from "@/app/assets/shop-1";
-import { items5 } from "@/app/assets/shop-1";
-import { items6 } from "@/app/assets/shop-1";
+import { items1 } from "@/assets/shop-1";
+import { items2 } from "@/assets/shop-1";
+import { items3 } from "@/assets/shop-1";
+import { items4 } from "@/assets/shop-1";
+import { items5 } from "@/assets/shop-1";
+import { items6 } from "@/assets/shop-1";
 import { useState } from "react";
 
 export default function HomePage() {

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay,  Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Link from "next/link";
 
 
 export default function Navbar() {
@@ -83,7 +84,10 @@ export default function Navbar() {
             <section className="flex justify-between pt-2 ">
         <div className="col-span-3 lg:col-span-4">
           <div className="pl-4">
+            <Link href="/">
             <i class="bx bx-closet text-2xl"></i>
+            </Link>
+           
           </div>
         </div>
         <div className="col-span-3 lg:col-span-4">
@@ -98,7 +102,10 @@ export default function Navbar() {
         </div>
         <div className="col-span-3 lg:col-span-4">
           <div className="pr-4">
+            <Link href="/checkout">
             <i class="bx bxs-shopping-bags text-2xl"></i>
+            </Link>
+            
           </div>
         </div>
       </section>

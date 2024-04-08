@@ -356,14 +356,9 @@ const items6=[
         id:7,
         name:"Brands 3",
         img:"/banner/brand-3.png"
-    },
-]
-const cart=[
-    {
-        id:1,
-        name:"tshirt",
-        price:"9.99"
     }
 ]
+
+
 
 export { items1, items2, items3, items4, items5, items6 };
