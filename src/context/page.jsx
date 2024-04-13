@@ -16,7 +16,7 @@ export const CartProvider = ({ children }) => {
 
     const getItemQuantity = (itemId) => {
         const item = cart.find((cartItem) => cartItem.id === itemId)
-        return item ? item.getItemQuantity : 0;
+        return item ? item.quantity : 0;
     };
 
     const addToCart = (item) => {
@@ -28,7 +28,7 @@ export const CartProvider = ({ children }) => {
                     cartItem.id === item.id
                         ? { ...cartItem, quantity: cartItem.quantity + 1 }
                         : cartItem
-                )
+                );
             } else {
                 return [...prevCart, { ...item, quantity: 1 }]
             }
@@ -74,5 +74,7 @@ export const CartProvider = ({ children }) => {
         </CartContext.Provider>
     )
 
-
 }
+export const useCart = () => {
+    return useContext(CartContext);
+  };
