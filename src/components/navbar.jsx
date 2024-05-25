@@ -5,6 +5,7 @@ import { Autoplay,  Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Link from "next/link";
+import './navbar.css'
 
 
 export default function Navbar() {
@@ -30,11 +31,11 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="flex px-10 justify-between bg-yellow-100 pt-3">
+            <div className="flex lg:px-10 justify-between bg-yellow-100 pt-3 container-main-css">
                 <div className="col-span-3 lg:col-span-4">
                     <ul className="flex">
-                        <li className="relative flex items-center">
-                            <a className="language-dropdown-active" href="#" onClick={toggleDropdown}>
+                        <li className="relative flex items-center title-css ">
+                            <a className="language-dropdown-active  " href="#" onClick={toggleDropdown}>
                                 English <i class='bx bx-chevron-down'></i>
                             </a>
                             <ul className={`absolute top-full left-0 z-10 min-w-24 bg-white rounded-b-lg border border-gray-200 shadow-md 
@@ -61,7 +62,8 @@ export default function Navbar() {
                                     clickable: true,
                                 }}
                                 modules={[Autoplay, Navigation]}
-                                className="h-10"
+                                className="h-10 swiper-css"
+                                
                             >
                                 <ul>
                                     <SwiperSlide className="bg-yellow-100">Get great devices up to 50% off <a href="shop.html">View details</a></SwiperSlide>
@@ -74,9 +76,9 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4">
-                    <div class="">
+                    <div class="container-login-css">
                         <ul>
-                            <li><i class="fi-rs-key"></i><a href="login.html">Log In </a>  / <a href="register.html">Sign Up</a></li>
+                            <li><i class="fi-rs-key"></i><a href="login.html" className="login-css">Log In </a>  / <a href="register.html" className="login-css">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>

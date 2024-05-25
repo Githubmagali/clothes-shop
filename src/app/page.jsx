@@ -1,13 +1,9 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { items1 } from "@/assets/shop-1";
-import { items2 } from "@/assets/shop-1";
-import { items3 } from "@/assets/shop-1";
-import { items4 } from "@/assets/shop-1";
-import { items5 } from "@/assets/shop-1";
-import { items6 } from "@/assets/shop-1";
+import { items1, items2, items3, items4, items5, items6 } from "@/assets/shop-1";
 import { useState } from "react";
+import './pageMain.css';
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -63,58 +59,58 @@ export default function HomePage() {
           <button>Buy now</button>
         </div>
       </section>
-      <section className="grid grid-cols-6 pl-12 pt-9 pb-10">
-        <div>
+      <section className="grid grid-cols-6 pl-12 pt-9 pb-10 shop-free-css">
+        <div className="container-img-free">
           <img
             src="feature-1.png"
-            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer"
+            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer img-free-css"
           />
-          <button className="text-center rounded rounded-md bg-pink-100 hover:bg-pink-300 py-1 px-1 mt-2 ">
+          <button className="text-center rounded rounded-md bg-pink-100 hover:bg-pink-300 py-1 px-1 mt-2 btn-free-css ">
             Free shipping
           </button>
         </div>
-        <div>
+        <div className="container-img-free">
           <img
             src="feature-2.png"
-            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer "
+            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer img-free-css"
           />
-          <button className="text-center rounded rounded-md bg-cyan-100 hover:bg-cyan-300 py-1 px-1 mt-2 ">
+          <button className="text-center rounded rounded-md bg-cyan-100 hover:bg-cyan-300 py-1 px-1 mt-2 btn-free-css">
             Free shipping
           </button>
         </div>
-        <div>
+        <div className="container-img-free">
           <img
             src="feature-3.png"
-            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer"
+            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer img-free-css"
           />
-          <button className="text-center rounded rounded-md bg-green-100 hover:bg-green-300 py-1 px-1 mt-2 ">
+          <button className="text-center rounded rounded-md bg-green-100 hover:bg-green-300 py-1 px-1 mt-2 btn-free-css">
             Free shipping
           </button>
         </div>
-        <div>
+        <div className="container-img-free">
           <img
             src="feature-4.png"
-            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer"
+            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer img-free-css"
           />
-          <button className="text-center rounded rounded-md bg-sky-100 hover:bg-sky-300 py-1 px-1 mt-2 ">
+          <button className="text-center rounded rounded-md bg-sky-100 hover:bg-sky-300 py-1 px-1 mt-2 btn-free-css">
             Free shipping
           </button>
         </div>
-        <div>
+        <div className="container-img-free">
           <img
             src="feature-5.png"
-            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer"
+            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer img-free-css"
           />
-          <button className="text-center rounded rounded-md bg-gray-100 hover:bg-gray-300 py-1 px-1 mt-2 ">
+          <button className="text-center rounded rounded-md bg-gray-100 hover:bg-gray-300 py-1 px-1 mt-2 btn-free-css ">
             Free shipping
           </button>
         </div>
-        <div>
+        <div className="container-img-free">
           <img
             src="feature-6.png"
-            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer"
+            className="object-cover w-28 h-28 rounded rounded-md cursor-pointer img-free-css"
           />
-          <button className="text-center rounded rounded-md bg-amber-100 hover:bg-amber-300 py-1 px-1 mt-2 ">
+          <button className="text-center rounded rounded-md bg-amber-100 hover:bg-amber-300 py-1 px-1 mt-2 btn-free-css">
             Free shipping
           </button>
         </div>
@@ -210,13 +206,13 @@ export default function HomePage() {
       <section className="relative flex items-center justify-center">
         <div className="">
           <img src="banner/banner-4.png" alt="" />
-          <div className="absolute top-9">
-            <h4 className="text-center text-3xl pl-9">Repair Services</h4>
-            <h1 className="text-center pl-5 mt-9">We're an Apple </h1>
-            <h2 className="text-center pl-8 mb-9">
+          <div className="absolute lg:top-9 banner-text-css ">
+            <h4 className="text-center lg:text-3xl lg:pl-9 title-repair-css">Repair Services</h4>
+            <h1 className="text-center pl-5 lg:mt-9 title-repair-css">We're an Apple </h1>
+            <h2 className="text-center lg:pl-8 lg:mb-9 title-repair-css ">
               Authorised Service Provider
             </h2>
-            <div className="pl-32 ">
+            <div className="pl-32 learn-more-btn-css">
               <a
                 href=""
                 className="border py-1 px-2 bg-orange-400 hover:bg-orange-500"

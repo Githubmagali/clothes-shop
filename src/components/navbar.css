@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+    .container-main-css{
+        padding-left: 9px;
+    }
+    .title-css{
+        font-size: 12px;
+
+    }
+
+    .swiper-css{
+        font-size: 12px;
+    }
+
+    .login-css{
+        font-size: 12px;
+    }
+
+   
+
+
+}
