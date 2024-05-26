@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+
+.selection-footer-css{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ padding-left: 20px;
+ padding-top: 40px;
+}
+.icon-card-css{
+    font-size: 30px;
+    margin: 0;
+}
+.footer-title-css{
+    font-size: 20px;
+}
+
+.selection-footer-second-css{
+   font-size: 10px; 
+}
+
+
+
+}

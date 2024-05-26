@@ -29,8 +29,8 @@ export default function Navbar() {
    
 
 
-    return (
-        <>
+    return (<>
+      <>
             <div className="flex lg:px-10 justify-between bg-yellow-100 pt-3 container-main-css">
                 <div className="col-span-3 lg:col-span-4">
                     <ul className="flex">
@@ -117,7 +117,7 @@ export default function Navbar() {
 
 
 
-      <section className="flex pr-8 pt-5">
+      <section className="flex lg:pr-8 pt-5 navbar-sections-seconds-css">
         <div className="px-2">Home</div>
 
         <ul className="flex">
@@ -130,15 +130,15 @@ export default function Navbar() {
             >
               Our collection <i class="bx bx-chevron-down"></i>
               <ul
-                className={`absolute top-full left-0 z-10 bg-white  shadow-md 
+                className={`absolute lg:top-full left-0 z-10 bg-white  shadow-md 
                                 ${
                                   isOpen
                                     ? "visible opacity-100"
                                     : "invisible opacity-0"
                                 } transition-all duration-250 ease-in-out`}
               >
-                <div className="grid grid-cols-4 our-collection gap-y-3 gap-x-4 ">
-                  <div className="grid-col-1">
+                <div className="lg:grid lg:grid-cols-4 our-collection lg:gap-y-3 lg:gap-x-4 grid-content-css">
+                  <div className="lg:grid-col-1 container-text-grid-css">
                     <h1 className="text-center  text-yellow-400 p-3">
                       Women's fashion
                     </h1>
@@ -147,25 +147,25 @@ export default function Navbar() {
                     <p className="pl-3">Hiddies</p>
                     <p className="pl-3">Shoes</p>
                   </div>
-                  <div className="grid-col-1">
+                  <div className="lg:grid-col-1 container-text-grid-css">
                     <h1 className="text-center  text-yellow-400 p-3">
                       Men's fashion
                     </h1>
-                    <p>Dresses</p>
-                    <p>Shirts</p>
-                    <p>Hiddies</p>
-                    <p>Shoes</p>
+                    <p className="pl-3">Dresses</p>
+                    <p className="pl-3">Shirts</p>
+                    <p className="pl-3">Hiddies</p>
+                    <p className="pl-3">Shoes</p>
                   </div>
-                  <div className="grid-col-1">
+                  <div className="lg:grid-col-1 container-text-grid-css">
                     <h1 className="text-center  text-yellow-400 p-3">
                       Technology
                     </h1>
-                    <p>Tablets</p>
-                    <p>Laptop</p>
-                    <p>Ultraslim</p>
-                    <p>Headphones</p>
+                    <p className="pl-3">Tablets</p>
+                    <p className="pl-3">Laptop</p>
+                    <p className="pl-3">Ultraslim</p>
+                    <p className="pl-3">Headphones</p>
                   </div>
-                  <div className="grid-col-1">
+                  <div className="lg:grid-col-1 ">
                     <img src="clothes-3.jpg" className="" />
                   </div>
                 </div>
@@ -184,7 +184,7 @@ export default function Navbar() {
             >
               Sections <i class="bx bx-chevron-down"></i>
               <ul
-                className={`absolute top-full left-0 z-10 bg-white  shadow-md  w-32 h-28 pt-5
+                className={`absolute top-full left-0 z-10 bg-white  shadow-md  lg:w-32 lg:h-28 pt-5 selections-conteiner-navbar-css
                     ${
                       selectOpen ? "visible opacity-100" : "invisible opacity-0"
                     } transition-all duration-250 ease-in-out`}
@@ -202,5 +202,7 @@ export default function Navbar() {
       </section>
 
         </>
+    </>
+      
     )
 }

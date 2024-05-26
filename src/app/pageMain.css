@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 .shop-free-css{
     padding-left: 5px;
     padding-right: 5px;
@@ -19,6 +19,9 @@
 .btn-free-css{
    font-size: 12px;
 }
+.container-color-css{
+    top:1px
+}
 .banner-css{
    padding-bottom: 20px;
 }
@@ -35,6 +38,23 @@
 .banner-text-css {
     top: 1rem;
 }
+.title-swiper-css{
+    font-size: 10px;
+}
+.text-container-map-css{
+    font-size: 12px;
+    font-weight: 700;
+}
 
+}
 
+@media(max-width: 680px){
+    .text-container-map-css{
+        font-size: 10px;
+    }
+    .img-map-5-css{
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
 }

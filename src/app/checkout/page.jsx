@@ -1,10 +1,13 @@
+import './checkout.css'
+
+
 export default function CheckOut() {
 
     return (
         <>
             <div className="flex flex-col p-20">
                 <h1 className="text-gray-800">Checkout</h1>
-                <div className="grid grid-cols-2 p-10">
+                <div className="grid grid-cols-2 p-10 checkout-container-css">
                     <div className="grid-col-1">
                         <h2 className="font-bold">Billing Details</h2>
                         <form className=" flex flex-col gap-y-10 p-10">

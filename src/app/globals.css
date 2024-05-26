@@ -9,9 +9,19 @@
 @import 'swiper/css/pagination';
 
 
-.our-collection{
-    width: 900px;
-    height: 300px;
+/* Estilos para pantallas de ordenador */
+@media (min-width: 1024px) {
+    .our-collection {
+        width: 900px;
+        height: 300px;
+    }
+}
+/* Estilos para pantallas móviles */
+@media (max-width: 600px) {
+    .our-collection {
+        width: 300px;  /* Ajusta estos valores según sea necesario */
+        height: auto;  /* Ajusta estos valores según sea necesario */
+    }
 }
 
 

@@ -207,7 +207,7 @@ export default function HomePage() {
         <div className="">
           <img src="banner/banner-4.png" alt="" />
           <div className="absolute lg:top-9 banner-text-css ">
-            <h4 className="text-center lg:text-3xl lg:pl-9 title-repair-css">Repair Services</h4>
+            <h4 className="text-center lg:text-3xl lg:pl-9   title-repair-css">Repair Services</h4>
             <h1 className="text-center pl-5 lg:mt-9 title-repair-css">We're an Apple </h1>
             <h2 className="text-center lg:pl-8 lg:mb-9 title-repair-css ">
               Authorised Service Provider
@@ -246,8 +246,8 @@ export default function HomePage() {
             {items4.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="border rounded-md flex flex-col items-center justify-center">
-                  <img src={item.img} className="w-24 h-28 border rounded-md" />
-                  <p>{item.title}</p>
+                  <img src={item.img} className="lg:w-24 lg:h-28 border rounded-md" />
+                  <p className="title-swiper-css">{item.title}</p>
                 </div>
               </SwiperSlide>
             ))}
@@ -257,15 +257,13 @@ export default function HomePage() {
       <section class="flex px-9">
         <div class="grid grid-cols-3 gap-x-4">
           {items5.map((item, index) => (
-            <div class="grid-col-1">
+            <div  key={index} class="grid-col-1">
               <div class="relative">
-                <img src={item.img} alt={item.alt} />
-                <div class="absolute top-5">
-                  <span className="text-xl pl-5">{item.name}</span>
-                  <h4 className="pl-3 pb-9">{item.text}</h4>
-                  <a href="shop.html" className="text-center">
-                    {item.buttom}
-                  </a>
+                <img src={item.img} alt={item.alt} className="img-map-5-css" />
+                <div class="absolute lg:top-1 container-color-css">
+                  <span className="text-xl pl-5 text-container-map-css">{item.name}</span>
+                  <h4 className="pl-3 pb-9 text-container-map-css">{item.text}</h4>
+                  
                 </div>
               </div>
             </div>
@@ -295,7 +293,7 @@ export default function HomePage() {
           >
             {items6.map((item, index) => (
               <SwiperSlide key={index}>
-                <img src={item.img} className="w-64 h-16 border rounded-md" />
+                <img src={item.img} className="border rounded-md" />
               </SwiperSlide>
             ))}
           </Swiper>

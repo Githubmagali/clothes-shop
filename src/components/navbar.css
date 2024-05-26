@@ -16,7 +16,24 @@
         font-size: 12px;
     }
 
-   
+   .navbar-sections-seconds-css{
+      display: flex;
+      font-size: 12px;
+   }
+   .grid-content-css{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+   }
+   .container-text-grid-css{
+    font-size: 12px;
+   }
+
+   .selections-conteiner-navbar-css{
+    width: 100px;
+    height: 100px;
+    padding-left: 10px;
+   }
 
 
 }
