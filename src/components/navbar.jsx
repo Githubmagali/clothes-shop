@@ -5,49 +5,31 @@ import { Autoplay,  Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Link from "next/link";
-import './navbar.css'
+import './navbar.css';
+import LenguajesPage from "./lenguajes";
 
 
 export default function Navbar() {
 
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-    const [selectOpen, setSelectOpen] = useState(false);
-    
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectOpen, setSelectOpen] = useState(false);
+  
+
+  const toggleDrop = () => {
+      setIsOpen(!isOpen);
     };
-
-    const toggleDrop = () => {
-        setIsOpen(!isOpen);
-      };
-    
-      const toggleSelect = () => {
-        setSelectOpen(!selectOpen);
-      };
-   
+  
+    const toggleSelect = () => {
+      setSelectOpen(!selectOpen);
+    };
+ 
 
 
     return (<>
       <>
             <div className="flex lg:px-10 justify-between bg-yellow-100 pt-3 container-main-css">
-                <div className="col-span-3 lg:col-span-4">
-                    <ul className="flex">
-                        <li className="relative flex items-center title-css ">
-                            <a className="language-dropdown-active  " href="#" onClick={toggleDropdown}>
-                                English <i class='bx bx-chevron-down'></i>
-                            </a>
-                            <ul className={`absolute top-full left-0 z-10 min-w-24 bg-white rounded-b-lg border border-gray-200 shadow-md 
-                                ${isDropdownOpen ? 'visible opacity-100' : 'invisible opacity-0'} transition-all duration-250 ease-in-out`}>
-                                <li><a href="#"><img src="flag-fr.png" alt="" className="inline-block max-w-5 mr-1" /> Français</a></li>
-                                <li><a href="#"><img src="flag-dt.png" alt="" className="inline-block max-w-5 mr-1" /> Deutsch</a></li>
-                                <li><a href="#"><img src="flag-ru.png" alt="" className="inline-block max-w-5 mr-1" /> Pусский</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
+              <LenguajesPage />
                 <div className="col-span-3">
                     <div class="text-center">
                         <div>

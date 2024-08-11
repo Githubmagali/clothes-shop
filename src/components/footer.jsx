@@ -68,7 +68,7 @@ export default function Footer() {
 
                     </div>
                     <div className="flex pr-9 ">
-                        <p>&copy;All right reserved</p>
+                        <p>&copy;Fernandez Magali Victoria</p>
                     </div>
 
                 </div>
