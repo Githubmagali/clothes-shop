@@ -217,7 +217,7 @@ export default function HomePage() {
                 href=""
                 className="border py-1 px-2 bg-orange-400 hover:bg-orange-500"
               >
-                Learn More <i class="bx bx-right-arrow-alt"></i>
+                Learn More <i className="bx bx-right-arrow-alt"></i>
               </a>
             </div>
           </div>
@@ -254,13 +254,13 @@ export default function HomePage() {
           </Swiper>
         </div>
       </section>
-      <section class="flex px-9">
-        <div class="grid grid-cols-3 gap-x-4">
+      <section className="flex px-9">
+        <div className="grid grid-cols-3 gap-x-4">
           {items5.map((item, index) => (
-            <div  key={index} class="grid-col-1">
-              <div class="relative">
+            <div  key={index} className="grid-col-1">
+              <div className="relative">
                 <img src={item.img} alt={item.alt} className="img-map-5-css" />
-                <div class="absolute lg:top-1 container-color-css">
+                <div className="absolute lg:top-1 container-color-css">
                   <span className="text-xl pl-5 text-container-map-css">{item.name}</span>
                   <h4 className="pl-3 pb-9 text-container-map-css">{item.text}</h4>
                   

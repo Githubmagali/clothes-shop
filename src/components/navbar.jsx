@@ -31,7 +31,7 @@ export default function Navbar() {
             <div className="flex lg:px-10 justify-between bg-yellow-100 pt-3 container-main-css">
               <LenguajesPage />
                 <div className="col-span-3">
-                    <div class="text-center">
+                    <div className="text-center">
                         <div>
                             <Swiper
                                 loop
@@ -57,10 +57,10 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4">
-                    <div class="container-login-css">
+                <div className="col-xl-3 col-lg-4">
+                    <div className="container-login-css">
                         <ul>
-                            <li><i class="fi-rs-key"></i><a href="login.html" className="login-css">Log In </a>  / <a href="register.html" className="login-css">Sign Up</a></li>
+                            <li><i className="fi-rs-key"></i><a href="login.html" className="login-css">Log In </a>  / <a href="register.html" className="login-css">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,14 +69,14 @@ export default function Navbar() {
         <div className="col-span-3 lg:col-span-4">
           <div className="pl-4">
             <Link href="/">
-            <i class="bx bx-closet text-2xl"></i>
+            <i className="bx bx-closet text-2xl"></i>
             </Link>
            
           </div>
         </div>
         <div className="col-span-3 lg:col-span-4">
           <form action="#">
-            <i class="bx bx-search-alt-2"></i>
+            <i className="bx bx-search-alt-2"></i>
             <input
               type="text"
               placeholder="Search for items..."
@@ -87,7 +87,7 @@ export default function Navbar() {
         <div className="col-span-3 lg:col-span-4">
           <div className="pr-4">
             <Link href="/checkout">
-            <i class="bx bxs-shopping-bags text-2xl"></i>
+            <i className="bx bxs-shopping-bags text-2xl"></i>
             </Link>
             
           </div>
@@ -110,7 +110,7 @@ export default function Navbar() {
               onMouseEnter={toggleDrop}
               onMouseLeave={toggleDrop}
             >
-              Our collection <i class="bx bx-chevron-down"></i>
+              Our collection <i className="bx bx-chevron-down"></i>
               <ul
                 className={`absolute lg:top-full left-0 z-10 bg-white  shadow-md 
                                 ${
@@ -164,7 +164,7 @@ export default function Navbar() {
               onMouseEnter={toggleSelect}
               onMouseLeave={toggleSelect}
             >
-              Sections <i class="bx bx-chevron-down"></i>
+              Sections <i className="bx bx-chevron-down"></i>
               <ul
                 className={`absolute top-full left-0 z-10 bg-white  shadow-md  lg:w-32 lg:h-28 pt-5 selections-conteiner-navbar-css
                     ${

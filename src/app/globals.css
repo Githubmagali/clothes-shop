@@ -1,12 +1,12 @@
+@import 'boxicons';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-@import 'boxicons';
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
 
 
 /* Estilos para pantallas de ordenador */

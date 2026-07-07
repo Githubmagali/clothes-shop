@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <>
             <selection className="grid lg:grid-cols-3 pt-4 bg-yellow-100 w-full pb-20 selection-footer-css">
-                <div className="pl-9 flex"><i class='bx bxs-envelope  lg:text-3xl icon-card-css'></i>
+                <div className="pl-9 flex"><i className='bx bxs-envelope  lg:text-3xl icon-card-css'></i>
                     <h1 className="text-center text-xl pl-4 footer-title-css">Sign up to Newsletter</h1>
                     </div>
                 <div>
@@ -19,7 +19,7 @@ export default function Footer() {
 
             <selection className="grid grid-cols-4 pt-9 pb-5 selection-footer-second-css">
                 <div className="grid-col-1 pl-4">
-                    <i class="bx bx-closet text-4xl"></i>
+                    <i className="bx bx-closet text-4xl"></i>
                     <h1 className="font-bold text-gray-400">Contact</h1>
                     <div className="text-gray-400">
                         <p>562 Wellington Road</p>
@@ -57,7 +57,7 @@ export default function Footer() {
                 </div>
 
             </selection>
-            <div class=" flex justify-center border border-gray-200 w-full"></div>
+            <div className=" flex justify-center border border-gray-200 w-full"></div>
 
             <selection className="">
                 <div className="flex justify-between pl-9  pt-9 pb-9" >

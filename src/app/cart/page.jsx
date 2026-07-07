@@ -25,7 +25,7 @@ export default function CartPage() {
                 </div>
             </div>
             <div className="pl-12 pr-12">
-                <div class="border bg-gray-100 w-full"></div>
+                <div className="border bg-gray-100 w-full"></div>
             </div>
 
             <div className="grid grid-cols-6 items-center justify-center pt-20 pb-20">
@@ -49,7 +49,7 @@ export default function CartPage() {
                 </div>
             </div>
 
-            <div class="border  bg-gray-100 w-full "></div>
+            <div className="border  bg-gray-100 w-full "></div>
             <div className="grid grid-cols-2 pt-20 pl-20">
                 <div className="flex flex-col pb-20">
                     <h1 className="pl-16 font-bold text-2xl">Calculate shipping</h1>
